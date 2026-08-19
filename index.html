@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Daily Grind | Premium Experience</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+:root{
+  --bg:#080807;--surface:#11110f;--surface-2:#181713;--gold:#d7b56d;
+  --cream:#f4efe5;--muted:#aaa397;--line:rgba(215,181,109,.22);
+  --shadow:0 24px 70px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--cream);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}.serif{font-family:Georgia,"Times New Roman",serif}
+.navbar{background:rgba(8,8,7,.82)!important;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.navbar-brand{font-family:Georgia,serif;letter-spacing:.08em}.nav-link{color:#d9d3c8!important;margin:0 .35rem}.nav-link:hover{color:var(--gold)!important}
+.btn-gold{background:var(--gold);color:#111;border:0;border-radius:999px;padding:.8rem 1.35rem;font-weight:700}
+.btn-gold:hover{background:#f1d89b;color:#111;box-shadow:0 10px 30px rgba(215,181,109,.18)}
+.btn-outline-gold{border:1px solid var(--gold);color:var(--gold);border-radius:999px;padding:.75rem 1.25rem}.btn-outline-gold:hover{background:var(--gold);color:#111}
+.hero{min-height:88vh;display:flex;align-items:center;background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.35)),url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=85&w=2200") center/cover}
+.hero h1{font-size:clamp(3.4rem,8vw,7rem);line-height:.92;letter-spacing:-.04em}.eyebrow{color:var(--gold);letter-spacing:.24em;text-transform:uppercase;font-size:.75rem;font-weight:700}
+.section{padding:100px 0}.surface{background:linear-gradient(145deg,#15140f,#0e0e0c);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}
+.card-premium{background:var(--surface);border:1px solid #292821;border-radius:20px;overflow:hidden;transition:.35s}.card-premium:hover{transform:translateY(-8px);border-color:var(--gold);box-shadow:var(--shadow)}
+.card-premium img{height:270px;width:100%;object-fit:cover;transition:.5s}.card-premium:hover img{transform:scale(1.04)}
+.price{color:var(--gold);font-weight:800}.muted{color:var(--muted)}.gold{color:var(--gold)}
+.page-hero{padding:150px 0 90px;background:radial-gradient(circle at 70% 20%,rgba(215,181,109,.12),transparent 35%)}
+.stat{padding:28px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.02)}
+.form-control,.form-select{background:#10100e!important;border:1px solid #34322b!important;color:var(--cream)!important;border-radius:12px;padding:.85rem 1rem}.form-control:focus,.form-select:focus{border-color:var(--gold)!important;box-shadow:0 0 0 .2rem rgba(215,181,109,.12)}
+footer{border-top:1px solid var(--line);padding:55px 0;color:var(--muted)}
+.reveal{opacity:0;transform:translateY(28px);transition:.8s}.reveal.active{opacity:1;transform:none}
+.toast-premium{position:fixed;right:24px;bottom:24px;z-index:9999;background:#17160f;border:1px solid var(--gold);padding:16px 20px;border-radius:14px;box-shadow:var(--shadow);display:none}
+@media(max-width:767px){.section{padding:70px 0}.hero{min-height:78vh}.navbar .btn-gold{display:none}}
+</style></head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top"><div class="container py-2">
+<a class="navbar-brand fs-4" href="index.html">THE DAILY GRIND</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="nav"><ul class="navbar-nav ms-auto align-items-lg-center"><li class="nav-item"><a class="nav-link gold" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link " href="menu.html">Menu</a></li><li class="nav-item"><a class="nav-link " href="story.html">Our Story</a></li><li class="nav-item"><a class="nav-link " href="experience.html">Experience</a></li><li class="nav-item"><a class="nav-link " href="journal.html">Journal</a></li><li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li><li class="nav-item"><a class="nav-link" href="outlets.html">Outlets</a></li><li class="nav-item"><a class="nav-link" href="activity.html" data-account>Login / Sign up</a></li></ul>
+<a href="menu.html" class="btn btn-gold ms-lg-3 mt-3 mt-lg-0">Order Now</a></div></div></nav>
+
+<section class="hero"><div class="container"><div class="row"><div class="col-lg-8 reveal">
+<div class="eyebrow mb-4">Specialty Coffee · Since 2018</div>
+<h1 class="serif">Elevate your<br><em>daily ritual.</em></h1>
+<p class="lead muted my-4" style="max-width:620px">A modern coffee house built around exceptional beans, quiet design, and the little moments that make ordinary mornings memorable.</p>
+<a href="menu.html" class="btn btn-gold me-2">Explore the Menu</a><a href="experience.html" class="btn btn-outline-gold">Book an Experience</a>
+</div></div></div></section>
+<section class="section"><div class="container"><div class="row g-4 align-items-end"><div class="col-lg-7 reveal"><div class="eyebrow">The Collection</div><h2 class="serif display-5 mt-2">Roasted with intention.</h2><p class="muted">From bright single-origin espresso to slow, silky cold brew. Every cup begins with a careful selection and ends with a moment worth keeping.</p></div><div class="col-lg-5 text-lg-end reveal"><a href="menu.html" class="btn btn-outline-gold">View Full Menu →</a></div></div>
+<div class="row g-4 mt-4">
+<div class="col-md-4 reveal"><div class="card-premium"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=85&w=900"><div class="p-4"><div class="eyebrow">01 · Espresso</div><h3 class="serif mt-2">House Espresso</h3><p class="muted">Dark chocolate, toasted almond, long caramel finish.</p><div class="price">₹290</div></div></div></div>
+<div class="col-md-4 reveal"><div class="card-premium"><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=85&w=900"><div class="p-4"><div class="eyebrow">02 · Milk</div><h3 class="serif mt-2">Vanilla Latte</h3><p class="muted">Silky microfoam, real vanilla, gentle sweetness.</p><div class="price">₹370</div></div></div></div>
+<div class="col-md-4 reveal"><div class="card-premium"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=85&w=900"><div class="p-4"><div class="eyebrow">03 · Cold</div><h3 class="serif mt-2">Nitro Cold Brew</h3><p class="muted">12-hour steep, nitrogenated for a velvet finish.</p><div class="price">₹420</div></div></div></div>
+</div></div></section>
+<section class="section pt-0"><div class="container"><div class="surface p-4 p-lg-5 reveal"><div class="row g-5 align-items-center"><div class="col-lg-6"><div class="eyebrow">The philosophy</div><h2 class="serif display-6">Less noise.<br>More ritual.</h2><p class="muted">Our space is designed to make you pause. Warm light, honest ingredients, and a menu that rewards curiosity.</p><a href="story.html" class="btn btn-outline-gold">Read Our Story</a></div><div class="col-lg-6"><div class="row g-3"><div class="col-6"><div class="stat"><div class="display-6 serif">18</div><span class="muted">origin profiles</span></div></div><div class="col-6"><div class="stat"><div class="display-6 serif">48h</div><span class="muted">roast-to-cup</span></div></div><div class="col-6"><div class="stat"><div class="display-6 serif">7am</div><span class="muted">first pour</span></div></div><div class="col-6"><div class="stat"><div class="display-6 serif">10pm</div><span class="muted">last ritual</span></div></div></div></div></div></div></section>
+
+<div id="toast" class="toast-premium"></div>
+<footer><div class="container"><div class="row g-4"><div class="col-md-5"><h4 class="serif">The Daily Grind</h4><p>Small-batch coffee, thoughtful food, and a slower way to start the day.</p></div>
+<div class="col-md-3"><div class="eyebrow mb-3">Explore</div><a class="d-block mb-2" href="menu.html">Menu</a><a class="d-block mb-2" href="experience.html">Private Experiences</a><a class="d-block" href="journal.html">Journal</a></div>
+<div class="col-md-4"><div class="eyebrow mb-3">Visit</div><p class="mb-1">Mon–Sun · 7:00 AM–10:00 PM</p><p>Premium coffee, freshly baked daily.</p></div></div>
+<div class="border-top border-secondary mt-5 pt-4 small">© 2026 The Daily Grind · Crafted for the everyday ritual.</div></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const sessionData={sessionId:Math.random().toString(36).slice(2),pageVisited:location.pathname,device:navigator.userAgent,screenResolution:screen.width+"x"+screen.height,events:[]};
+let startTime=Date.now();
+function logEvent(eventType,details={}){sessionData.events.push({eventType,timestamp:Date.now(),...details});}
+document.addEventListener('click',e=>{const el=e.target.closest('a,button');if(el)logEvent('click',{elementId:el.id||el.getAttribute('href')||'',text:el.innerText.trim().slice(0,80)});});
+document.addEventListener('scroll',()=>{const d=Math.round((scrollY+innerHeight)/document.body.scrollHeight*100);if([25,50,75,100].includes(d))logEvent('scroll_depth',{depth:d});},{passive:true});
+const obs=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('active')),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(x=>obs.observe(x));
+async function syncAnalytics(){sessionData.timeOnPage=(Date.now()-startTime)/1000;try{await fetch('http://localhost:5000/api/track',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(sessionData)});}catch(e){}}
+window.addEventListener('beforeunload',()=>{syncAnalytics();});
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.style.display='block';setTimeout(()=>t.style.display='none',2600)}
+
+document.querySelectorAll('[data-order]').forEach(b=>b.addEventListener('click',()=>toast('Added to your ritual · head to Menu to complete the order.')));
+
+</script><script src="site.js"></script></body></html>
