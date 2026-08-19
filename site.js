@@ -1,4 +1,4 @@
-const API='http://localhost:5000';
+const API='https://web-anaylsis.onrender.com';
 const currentUser=()=>JSON.parse(localStorage.getItem('dailyGrindUser')||'null');
 function requireLogin(){const u=currentUser();if(!u){location.href='auth.html?next='+encodeURIComponent(location.pathname);return null}return u}
 function moneyINR(n){return '₹'+Number(n||0).toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2})}
